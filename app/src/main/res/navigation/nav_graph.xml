@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/citySearchFragment">
+
+    <fragment
+        android:id="@+id/citySearchFragment"
+        android:name="com.aryanakbarpour.localgraffiti.CitySearchFragment"
+        android:label="fragment_city_search"
+        tools:layout="@layout/fragment_city_search" >
+        <action
+            android:id="@+id/action_citySearchFragment_to_artsListFragment"
+            app:destination="@id/artsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/artDetailFragment"
+        android:name="com.aryanakbarpour.localgraffiti.ArtDetailFragment"
+        android:label="fragment_art_detail"
+        tools:layout="@layout/fragment_art_detail" >
+        <action
+            android:id="@+id/action_artDetailFragment_to_artsListFragment"
+            app:destination="@id/artsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/artsListFragment"
+        android:name="com.aryanakbarpour.localgraffiti.ArtsListFragment"
+        android:label="fragment_arts_list"
+        tools:layout="@layout/fragment_arts_list" >
+        <action
+            android:id="@+id/action_artsListFragment_to_artDetailFragment"
+            app:destination="@id/artDetailFragment" />
+    </fragment>
+</navigation>
