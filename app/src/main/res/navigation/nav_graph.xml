@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/citySearchFragment"
-        android:name="com.aryanakbarpour.localgraffiti.CitySearchFragment"
+        android:name="com.aryanakbarpour.localgraffiti.citysearch.CitySearchFragment"
         android:label="fragment_city_search"
         tools:layout="@layout/fragment_city_search" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/artDetailFragment"
-        android:name="com.aryanakbarpour.localgraffiti.ArtDetailFragment"
+        android:name="com.aryanakbarpour.localgraffiti.arts.ArtDetailFragment"
         android:label="fragment_art_detail"
         tools:layout="@layout/fragment_art_detail" >
         <action
@@ -25,9 +25,12 @@
     </fragment>
     <fragment
         android:id="@+id/artsListFragment"
-        android:name="com.aryanakbarpour.localgraffiti.ArtsListFragment"
+        android:name="com.aryanakbarpour.localgraffiti.arts.ArtsListFragment"
         android:label="fragment_arts_list"
         tools:layout="@layout/fragment_arts_list" >
+        <argument
+            android:name="city_name"
+            app:argType="string" />
         <action
             android:id="@+id/action_artsListFragment_to_artDetailFragment"
             app:destination="@id/artDetailFragment" />
