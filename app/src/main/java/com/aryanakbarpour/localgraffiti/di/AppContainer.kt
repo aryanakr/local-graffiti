@@ -9,6 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class AppContainer() {
 
+//    Doesn't work for some god unknown reason
 //    private val headerInterceptor = Interceptor { chain ->
 //        var request = chain.request()
 //
@@ -29,5 +30,7 @@ class AppContainer() {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
         .create(StreetArtApiService::class.java)
+
+
 
 }
