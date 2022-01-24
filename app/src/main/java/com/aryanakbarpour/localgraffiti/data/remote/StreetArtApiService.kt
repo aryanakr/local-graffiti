@@ -1,11 +1,12 @@
 package com.aryanakbarpour.localgraffiti.data.remote
 
+import com.aryanakbarpour.localgraffiti.BuildConfig
 import com.aryanakbarpour.localgraffiti.data.Art
 import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.Path
 
-private const val API_KEY = "<Your_API_Key>"
+private const val API_KEY = BuildConfig.API_KEY
 
 interface StreetArtApiService {
     @Headers(

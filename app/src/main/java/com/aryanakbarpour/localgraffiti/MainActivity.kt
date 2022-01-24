@@ -2,6 +2,7 @@ package com.aryanakbarpour.localgraffiti
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.DisplayMetrics
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
 
         setupActionBarWithNavController(navController)
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
